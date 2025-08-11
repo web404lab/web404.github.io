@@ -20,12 +20,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
-    permissions:
-    contents: write  # 允许写入仓库（用于部署静态文件）
-    issues: read     # 允许读取issue数据（用于生成博客内容）
-
-
     strategy:
       matrix:
         node-version: [19.x]
